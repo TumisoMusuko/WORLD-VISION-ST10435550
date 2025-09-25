@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+## Part 2 – Designing the Visuals: CSS Styling and Responsive Design
+
+### Learning Outcomes
+- Implement an external CSS stylesheet linked to all pages.  
+- Apply consistent decorative, typographic, and layout styling for a desktop solution.  
+- Utilize cascading CSS effectively with minimal selectors.  
+- Implement responsive design using relative values, media queries, and breakpoints.  
+- Test the design on multiple devices using browser developer tools.  
