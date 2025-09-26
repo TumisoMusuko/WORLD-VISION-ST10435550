@@ -1,0 +1,26 @@
+
+<!--Part 2 Updates-->
+
+Created a global stylesheet (css/style.css) and linked it to all pages.
+
+Applied base styling: typography, color scheme, reset styles, and spacing.
+
+Implemented Flexbox and CSS Grid for layout structure.
+
+Added hover and interactive effects for buttons and cards.
+
+Introduced responsive design with breakpoints for desktop (default), tablet (≤768px), and mobile (≤480px).
+
+Converted fixed units to relative units (rem, %) for better scalability.
+
+Added responsive image handling with srcset and sizes.
+
+Updated README.md with new changelog, screenshots section, and references.
+
+<!--Part 1 Corrections (based on feedback)-->
+
+Fixed navigation links across all pages for consistency.
+
+Cleaned up HTML structure for semantic correctness.
+
+Ensured consistent footer across all pages.
