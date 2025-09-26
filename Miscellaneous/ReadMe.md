@@ -32,13 +32,13 @@ It was developed as part of coursework for Rosebank College, focusing on web dev
 <!--Screenshots Evidence-->
 
 <!--Desktop View-->
-![Desktop Screenshot Placeholder]
+[Desktop Screenshot Placeholder]
 
 <!--Tablet View-->
-![Tablet Screenshot Placeholder]
+[Tablet Screenshot Placeholder]
 
 <!--Mobile View-->
-![Mobile Screenshot Placeholder]
+[Mobile Screenshot Placeholder]
 
 
 
