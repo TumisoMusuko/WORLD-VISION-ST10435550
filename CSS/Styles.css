@@ -269,3 +269,30 @@ footer {
   }
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #f7941d;
+    width: 100%;
+    padding: 1rem;
+  }
+  nav ul.show {
+    display: flex;
+  }
+}
+
+.more-text {
+  display: none;
+}
+
+
