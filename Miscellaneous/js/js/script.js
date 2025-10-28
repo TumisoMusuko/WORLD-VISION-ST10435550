@@ -65,3 +65,26 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// ===========================
+// TAB FUNCTIONALITY
+// ===========================
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const tabId = button.dataset.tab;
+
+      // Remove active state from all buttons and contents
+      tabButtons.forEach((btn) => btn.classList.remove('active'));
+      tabContents.forEach((content) => content.classList.remove('active'));
+
+      // Activate the selected tab and content
+      button.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+});
