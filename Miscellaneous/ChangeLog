@@ -1,4 +1,10 @@
+<!--Part 1 Corrections (based on feedback)-->
 
+Fixed navigation links across all pages for consistency.
+
+Cleaned up HTML structure for semantic correctness.
+
+Ensured consistent footer across all pages.
 <!--Part 2 Updates-->
 
 Created a global stylesheet (css/style.css) and linked it to all pages.
@@ -17,10 +23,15 @@ Added responsive image handling with srcset and sizes.
 
 Updated README.md with new changelog, screenshots section, and references.
 
-<!--Part 1 Corrections (based on feedback)-->
+<!--Fixing the Feedback for the part 2-->
+CSS Styling for Desktop: CSS typography, layout and decoration styles were not properly implemented.
 
-Fixed navigation links across all pages for consistency.
+Pseudo selectors/classes are now used and do work.
 
-Cleaned up HTML structure for semantic correctness.
+Responsive Design: Did the Adjustment on Typography, layout, and images for smaller devices.
 
-Ensured consistent footer across all pages.
+ReadMe should first contain the description, structure, setup (configurations) of your website.
+
+<!--The inquiry form-->
+I placesd the enquiry form under contact.html
+
