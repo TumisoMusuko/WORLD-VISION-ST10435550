@@ -1,3 +1,51 @@
+<!--Website Description-->
+
+The World Vision International Website is a multi-page, responsive web project designed as part of a Web Development POE.  
+It serves as a modern, user-friendly digital platform to showcase the mission, goals, and impact of World Vision International, a global humanitarian organization dedicated to helping vulnerable children and communities since 1950.
+
+The website aims to:
+- Create awareness about World Vision’s community programs.
+- Encourage users to take action through donations, sponsorship, and volunteering.
+- Share stories of impact and success across different countries.
+- Provide an accessible, visually appealing, and easy-to-navigate online experience on all devices.
+
+The project follows a structured development process:
+- Part 1: Website proposal and planning.
+- Part 2: Visual design and responsive CSS implementation.
+- Part 3: Interactivity, accessibility, and JavaScript enhancements.
+
+This website is fully responsive, interactive, and optimized for both desktop and mobile users.
+<!--Website structure-->
+worldvision-website/
+│
+├── index.html           Home page – introduction and mission overview
+├── about.html           Organization overview and history
+├── goals.html           Website goals and objectives
+├── features.html        Proposed features and functionalities
+├── design.html          Design and user experience concepts
+├── technical.html       Technical requirements and timeline
+├── sitemap.html         Page navigation overview
+├── contact.html         Contact form for inquiries and volunteering
+│
+├── css/
+│   ├── style.css        Main styling and responsive layout
+│   └── style-map.css    Dedicated styling for map page
+│
+├── js/
+│   ├── script.js        JavaScript functionality (Read More, Form Validation, Back-to-Top)
+│   └── map.js           Leaflet map logic and markers
+│
+├── images/
+│   ├── children-small.jpg
+│   ├── children-medium.jpg
+│   ├── children-large.jpg
+│   ├── screenshot-desktop.png
+│   ├── screenshot-tablet.png
+│   └── screenshot-mobile.png
+│
+└── README.md            Project documentation and changelog
+
+
 <!--Overview-->
 This repository contains the website project for World Vision International.  
 It was developed as part of coursework for Rosebank College, focusing on web development concepts and practical implementation.
@@ -27,6 +75,17 @@ It was developed as part of coursework for Rosebank College, focusing on web dev
 - Cleaned up HTML structure for semantic correctness.  
 - Ensured consistent footer across all pages.  
 
+<!--Tabs Functionality-->
+- Implemented interactive tabbed content on the Features page using HTML, CSS, and JavaScript.
+- Each tab displays different program areas (Education, Health, and Community Development).
+- Added smooth transitions and responsive design for tablets and mobile devices.
+
+<!--Inquiry Form-->
+- Added a fully functional Inquiry Form on the Contact page.
+- Includes validation for name, email, subject, and message fields.
+- Provides user feedback via alert messages for success or missing information.
+- Uses JavaScript for form submission handling and CSS for interactive validation feedback.
+- Designed with accessibility and mobile responsiveness in mind.
 
 
 <!--Screenshots Evidence-->
