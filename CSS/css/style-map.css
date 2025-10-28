@@ -1,0 +1,112 @@
+
+
+/* ===== GENERAL PAGE LAYOUT ===== */
+main.content {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+main.content h2 {
+  color: #f7941d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main.content p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* ===== MAP CONTAINER ===== */
+.map {
+  height: 60vh;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem 0 2rem;
+  z-index: 0;
+}
+
+/* ===== MAP LEGEND ===== */
+.map-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.map-legend .dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: #f7941d;
+  border-radius: 50%;
+}
+
+/* ===== LEAFLET MAP POPUP STYLES ===== */
+.leaflet-popup-content {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.leaflet-popup-content h3 {
+  color: #f7941d;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.leaflet-popup-content p {
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.leaflet-popup-content .popup-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f7941d;
+  transition: color 0.2s ease;
+}
+
+.leaflet-popup-content .popup-link:hover {
+  text-decoration: underline;
+  color: #d97a10;
+}
+
+/* ===== RESPONSIVE MAP DESIGN ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .map {
+    height: 50vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  main.content {
+    padding: 2rem 1rem;
+  }
+
+  main.content h2 {
+    font-size: 1.6rem;
+  }
+
+  .map {
+    height: 45vh;
+  }
+
+  .map-legend {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
