@@ -71,11 +71,40 @@
       <p>Read real-life stories about how lives are being transformed.</p>
     </div>
   </section>
-                      <p id="currentDateTime"></p>
 
   <!-- Footer -->
   <footer>
+    <p id="currentDateTime" aria-live="polite"></p>
     <p>&copy; 2025 World Vision International | Designed by Tumiso Musuko</p>
+    <script>
+    function updateDateTime() {
+      const now = new Date();
+      // Format options: long human readable date + time with seconds and timezone short name
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false,
+        timeZone: "Africa/Johannesburg",
+        timeZoneName: "short"
+      };
+
+      const dateTimeString = now.toLocaleString("en-ZA", options);
+      const el = document.getElementById("currentDateTime");
+      if (el) {
+        el.textContent = "Current Date & Time (SAST): " + dateTimeString;
+      }
+    }
+
+    // Update every second
+    setInterval(updateDateTime, 1000);
+    // Run immediately on load
+    updateDateTime();
+  </script>
   </footer>
 </body>
 </html>

@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
 function updateDateTime() {
     const now = new Date();
     const dateTimeString = now.toLocaleString("en-ZA", {

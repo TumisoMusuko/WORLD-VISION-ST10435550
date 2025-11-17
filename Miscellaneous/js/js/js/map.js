@@ -82,3 +82,25 @@ legend.addTo(map);
 window.addEventListener('resize', () => {
   map.invalidateSize();
 });
+
+function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString("en-ZA", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+    document.getElementById("currentDateTime").textContent =
+        "Current Date & Time: " + dateTimeString;
+}
+
+// Update every second
+setInterval(updateDateTime, 1000);
+
+// Run immediately on page load
+updateDateTime();
