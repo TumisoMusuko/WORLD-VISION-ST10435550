@@ -377,3 +377,56 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Share Section */
+.share-section {
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.share-btn.fb { background: #1877f2; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.li { background: #0077b5; }
+
+/* Floating Share Bar */
+.floating-share {
+  position: fixed;
+  right: 20px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-share a {
+  background: #f58220;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 45px;
+  text-align: center;
+}
+
+.floating-share a:hover {
+  opacity: 0.8;
+}
