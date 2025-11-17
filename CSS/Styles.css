@@ -1,7 +1,3 @@
-
-
-
-
 /* ==============================
    Global Stylesheet - Advanced Version
    ============================== */
@@ -23,7 +19,39 @@ body {
   margin: 0;
 }
 
-/* Header + Navigation */
+/* ==============================
+   IMAGE STYLING (NEW)
+   ============================== */
+img,
+picture img {
+  width: 100%;
+  max-width: 400px;       /* Set consistent width for all images */
+  height: 250px;          /* Set consistent height */
+  object-fit: cover;      /* Ensures image crops nicely without distortion */
+  border-radius: 10px;    /* Optional: makes images look cleaner */
+  display: block;
+  margin: 1rem auto;      /* Centers all images */
+}
+
+/* Responsive images: adjust size on smaller screens */
+@media (max-width: 768px) {
+  img,
+  picture img {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  img,
+  picture img {
+    height: 180px;
+  }
+}
+
+/* ==============================
+   Header + Navigation
+   ============================== */
 header {
   background: linear-gradient(90deg, #f57c00, #e65100);
   color: #fff;
@@ -226,8 +254,6 @@ footer {
 }
 
 /* Responsive Design */
-
-/* Tablet */
 @media (max-width: 768px) {
   nav ul {
     gap: 1rem;
@@ -295,7 +321,6 @@ footer {
   display: none;
 }
 
-
 /* ===========================
    TABS STYLING
 =========================== */
@@ -352,5 +377,3 @@ footer {
     transform: translateY(0);
   }
 }
-
-
