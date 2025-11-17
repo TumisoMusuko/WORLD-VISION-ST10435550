@@ -16,6 +16,11 @@ function toggleReadMore() {
   }
 }
 
+setInterval(() => {
+  document.getElementById("realtime").textContent =
+    "Last updated: " + new Date().toLocaleTimeString();
+}, 2000);
+
 // ===========================
 // CONTACT FORM VALIDATION
 // ===========================
@@ -45,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   }
+});
+document.getElementById("inquiry-form").addEventListener("submit", e => {
+  e.preventDefault();
+  alert("Inquiry sent successfully!");
 });
 
 // ===========================
@@ -88,3 +97,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString("en-ZA", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+    document.getElementById("currentDateTime").textContent =
+        "Current Date & Time: " + dateTimeString;
+}
+
+// Update every second
+setInterval(updateDateTime, 1000);
+
+// Run immediately on page load
+updateDateTime();
