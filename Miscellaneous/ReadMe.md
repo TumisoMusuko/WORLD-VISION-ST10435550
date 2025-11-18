@@ -100,6 +100,90 @@ It was developed as part of coursework for Rosebank College, focusing on web dev
 [Mobile Screenshot Placeholder]
 
 
+<!--Part 3 JavaScript Features Implemented-->
+<!--Dynamic Date and Time-->
+
+Added auto-updating date and time to footer across all pages.
+
+Script runs every second using local timezone (Africa/Johannesburg).
+
+
+<!--Interactive Tabs & Accordions-->
+
+Pages:
+
+/Pages/features.html (accordion)
+
+/Pages/design.html (tab switching)
+
+Purpose: Improve content navigation.
+
+<!--6.3 Modal Popup-->
+
+Newsletter / Success modal popup
+
+Used for contact form feedback
+
+Includes overlay and close button
+
+
+<!--Full Search Feature-->
+
+User can search website content
+
+Results display dynamically
+
+Lightweight and fast client-side search
+
+
+<!--Interactive Map-->
+
+Displayed symbolic location pins
+
+Zoom, pan, responsive
+
+OpenStreetMap tile layer included
+
+
+<!--Enquiry Form with Validation-->
+
+Validates name, email, quantity
+
+Shows results dynamically on page
+
+
+<!--Contact Form + EmailJS Integration-->
+
+Validates name, email, phone
+
+Sends email via EmailJS API
+
+Shows success popup modal
+
+<!--SEO Features Added-->
+Meta Title (per page)
+Meta Description
+Meta Keywords
+Alt text for all images
+Friendly filenames
+Accessible headings & ARIA labels
+
+<!--Browser Support-->
+Google Chrome	
+Microsoft Edge	
+Mozilla Firefox	
+Safari	
+Mobile Browsers	
+
+
+
+
+<!--Required Links-->
+Type	Status	Link
+GitHub Repository		https://github.com/TumisoMusuko/WORLD-VISION-ST10435550
+
+Live Website (Netlify)	(https://691b398000441213d134fe6b--tubular-halva-5f13ba.netlify.app/)
+
 
 <!--References-->
 World Vision International. (2024) Who We Are.
