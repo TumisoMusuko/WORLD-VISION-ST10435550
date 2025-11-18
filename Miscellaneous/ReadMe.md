@@ -182,7 +182,7 @@ Mobile Browsers
 Type	Status	Link
 GitHub Repository		https://github.com/TumisoMusuko/WORLD-VISION-ST10435550
 
-Live Website (Netlify)	(https://691b398000441213d134fe6b--tubular-halva-5f13ba.netlify.app/)
+Live Website (Netlify)	https://worldvisionnetworktumisomusuko.netlify.app/
 
 
 <!--References-->
