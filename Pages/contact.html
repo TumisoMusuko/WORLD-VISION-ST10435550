@@ -45,6 +45,31 @@
     <h2>Contact Us</h2>
     <p>If you’d like to get involved, sponsor a child, or learn more, please reach out:</p>
 
+    <form id="contactForm">
+  <label for="fullname">Full Name</label>
+  <input type="text" id="fullname" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="text" id="phone" required placeholder="e.g. 0831234567">
+
+  <label for="message">Your Message</label>
+  <textarea id="message" required></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2>Message Sent!</h2>
+    <p>Your message has been successfully sent. We will contact you soon.</p>
+  </div>
+</div>
+
     <!-- Contact Form Card -->
     <section class="contact-card">
       <h2>Send Us an Inquiry</h2>
@@ -102,6 +127,7 @@
        target="_blank" class="share-btn li">LinkedIn</a>
   </div>
 </div>
+<script src="../JS/enquiry.js"></script>
 
   <!-- Footer -->
   <footer>

@@ -56,6 +56,92 @@ document.getElementById("inquiry-form").addEventListener("submit", e => {
   alert("Inquiry sent successfully!");
 });
 
+// enquiry.js
+// enquiry.js
+
+const form = document.getElementById('enqForm');
+const type = document.getElementById('type');
+const productLabel = document.getElementById('productLabel');
+
+// Show or hide the product dropdown depending on "service" type
+type.addEventListener('change', () => {
+  productLabel.style.display = type.value === 'service' ? 'block' : 'none';
+});
+
+// Pricing function
+function priceFor(product) {
+  return product === 'basic' ? 350 :
+         product === 'pro' ? 700 :
+         1200; // premium
+}
+
+// Handle form submission
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const fullname = document.getElementById('fullname').value.trim();
+  const email = document.getElementById('email').value.trim();
+
+  // Basic validation
+  if (fullname.length < 2) return alert('Please enter your name');
+  if (!/^\S+@\S+\.\S+$/.test(email)) return alert('Please enter a valid email');
+
+  const enqType = type.value;
+  const qty = Number(document.getElementById('qty').value) || 1;
+  const result = document.getElementById('result');
+
+  // SERVICE QUOTE
+  if (enqType === 'service') {
+    const product = document.getElementById('product').value;
+    const unit = priceFor(product);
+    const total = unit * qty;
+
+    result.innerHTML = `
+      <h2>Quote</h2>
+      <p><strong>Package:</strong> ${product}</p>
+      <p><strong>Quantity:</strong> ${qty}</p>
+      <p><strong>Total Price:</strong> R${total.toFixed(2)}</p>
+    `;
+  } 
+  
+  // VOLUNTEER ENQUIRY
+  else if (enqType === 'volunteer') {
+    result.innerHTML = `
+      <p>Thank you <strong>${fullname}</strong>.  
+      We have volunteer slots available next month.  
+      A confirmation email will be sent to <strong>${email}</strong>.</p>
+    `;
+  }
+
+  // SPONSORSHIP ENQUIRY
+  else if (enqType === 'sponsor') {
+    result.innerHTML = `
+      <p>Thank you for your interest in sponsoring a child.  
+      A sponsorship information pack has been emailed to <strong>${email}</strong>.</p>
+    `;
+  }
+
+  // NO OPTION SELECTED
+  else {
+    result.innerHTML = `
+      <p>Please select an enquiry type.</p>
+    `;
+  }
+});
+
+// Duplicate listener removed — the logic above handles it.
+
+// Show/hide product selection based on enquiry type
+document.getElementById("type").addEventListener("change", function() {
+  const productLabel = document.getElementById("productLabel");
+  if (this.value === "service") {
+    productLabel.style.display = "block";
+  } else {
+    productLabel.style.display = "none";
+  }
+});
+
+
 // ===========================
 // BACK TO TOP BUTTON
 // ===========================
