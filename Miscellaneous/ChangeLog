@@ -35,3 +35,173 @@ ReadMe should first contain the description, structure, setup (configurations) o
 <!--The inquiry form-->
 I placesd the enquiry form under contact.html
 
+<!-- Initial Project Setup-->
+
+Created project folder structure (Index.html, /Pages/, /CSS/, /JS/, /ASSETS/).
+
+Added initial layout and wireframe content based on the submitted proposal.
+
+Implemented base navigation menu across all pages.
+
+Added default orange theme styling in style.css.
+
+<!--External CSS & Asset Optimization-->
+
+Created css/style.css and applied to all pages.
+
+Implemented CSS reset and global styling.
+
+Fixed image paths and renamed images using SEO-friendly titles.
+
+Added consistent header and footer templates across all pages.
+
+
+<!--SEO Enhancements-->
+
+Added unique SEO <title> tags for every page.
+
+Added <meta name="description"> and <meta name="keywords">.
+
+Added alt="" text to all images for accessibility.
+
+Ensured proper heading structure
+
+<!--Responsive Design Implementation-->
+
+Converted page layout using Flexbox + Grid.
+
+Added media queries (mobile, tablet, desktop breakpoints).
+
+Implemented responsive <picture> & srcset for hero images on Index.html.
+
+Improved mobile navigation spacing and typography scale.
+
+
+<!--Added Dynamic Date & Time (Real-Time Content) on the home page-->
+
+Added currentDateTime element to footer in all pages.
+
+Implemented automatic JavaScript time updater (script.js).
+
+Set timezone to Africa/Johannesburg for accuracy.
+
+
+<!--JavaScript Interactive Elements-->
+
+Added accordion component to features.html.
+
+Added tabbed content to design.html.
+
+Added modal popup (newsletter / message popup) in Index.html.
+
+Added smooth scroll & back-to-top button.
+
+
+<!--Search Feature Implementation-->
+
+Added search bar and search results container in search.html.
+
+Implemented JavaScript keyword matching across page data.
+
+Styled search results with highlight effect.
+
+<!--Interactive Map-->
+
+Created /Pages/map.html.
+
+Implemented Leaflet.js + OpenStreetMap tiles.
+
+Added custom marker and popup for World Vision location.
+
+Styled map container using style-map.css.
+
+
+<!--Gallery Lightbox Implementation-->
+
+Created gallery.html and added organized grid layout.
+
+Implemented JavaScript lightbox (lightbox.js)
+
+Image expand
+
+Background overlay
+
+Caption
+
+Close button
+
+Keyboard Escape support
+
+<!--Enquiry Form (Validation + Feedback)-->
+
+Added enquiry form in contact.html.
+
+Implemented JavaScript validation (email format, required fields).
+
+Added success/error feedback notifications.
+
+Styled forms with improved accessibility.
+
+
+<!--Contact Form (EmailJS Integration)-->
+
+Integrated EmailJS processing for sending emails directly from the website.
+
+Added:
+
+Service ID
+
+Template ID
+
+Public key placeholder (student to insert actual key).
+
+Implemented error handling for failed submissions.
+
+Added user-friendly success message with modal popup.
+
+
+<!--Navigation & UI Improvements-->
+
+Refined nav bar spacing & hover effects.
+
+Highlighted active page link using .active class.
+
+Added logo in navigation on all pages.
+
+Improved footer spacing and responsiveness.
+
+
+<!--Final Structural Cleanup-->
+
+Removed duplicate <head> tags found in some pages.
+
+Cleaned inconsistent paths to CSS & JS.
+
+Ensured all internal links are working.
+
+Polished accessibility: aria-labels, role tags, alt improvements.
+
+
+<!--Final Deployment Preparation-->
+
+Minified images for faster loading.
+
+Verified Preload & Prefetch links.
+
+Deployed website on Netlify 
+
+Verified GitHub repository structure is clean & readable.
+
+<!--Checklist Compliance Confirmation-->
+
+ Styling
+ JS Interactivity
+ Map
+ Lightbox
+ Search
+ SEO
+ Forms
+ Responsiveness
+ Documentation in README
+ Git commits
+
